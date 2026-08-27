@@ -1,7 +1,7 @@
 ## Hello world!
 ### こんにちは世界！
 どうもこんにちは、Windows 7です。  
-このサイトは**不定期**で更新していきます
+このサイトは**不定期**で更新していきます  
 <mark style="background-color: red;">ゆっくりしていってね</mark>  
 <mark>ゆっくりしていってね</mark>
 
