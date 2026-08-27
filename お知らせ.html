@@ -6,21 +6,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
  <style type="text/css">
 @font-face {
-    font-family: "BIZ UDPGothic";
-    src: url("BIZUDPGothic-Regular.ttf") format("truetype");
+    font-family: "Subset";
+    src: url("Subset.woff2") format("woff2"),
+           url("Subset.woff") format("woff");
     font-display: swap;
 }
 
 body {
-    font-family: "Meiryo", "メイリオ", "Hiragino Sans", "ヒラギノ角ゴシック", "BIZ UDPGothic", "BIZ UDPゴシック", "Noto Sans JP", sans-serif;
+    font-family: "Meiryo", "メイリオ", "Hiragino Sans", "ヒラギノ角ゴシック", "Subset", "BIZ UDPゴシック", "Noto Sans JP", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
-}
-
-p {
-    margin-top: 0;
-    margin-bottom: 0.25em;
 }
 
  h1{
@@ -71,5 +67,9 @@ sans-serifも指定しています。</p>
 PCでもっと見にくくなりましたね⋯
 メイリオ＞ヒイラギ角ゴ＞BIZ UDPGothic＞<br>
 Noto Sans JP＞sans-serifの順です。)</p>
+<p>2026/8/27</p>
+<p>フォントをサブセット化しました。(WOFF,WOFF2)</p>
+<p>TFFと比べ、4割,5割程度軽量化したので、<br>
+少しだけ読み込み時間が短くなったと思います。</p>
 </body>
 </html>
