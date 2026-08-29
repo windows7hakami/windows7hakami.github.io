@@ -13,4 +13,5 @@ $${\color{yellow}ゆっくりしていってね}$$
 Copyright 2022 The BIZ UDGothic Project Authors (https://github.com/googlefonts/morisawa-biz-ud-mincho)  
 Copyright 2026 windows7hakami　　
 
-[BIZ UDPGothic(Google Fonts)](https://fonts.google.com/specimen/BIZ+UDPGothic)
+[BIZ UDPGothic(Google Fonts)](https://fonts.google.com/specimen/BIZ+UDPGothic)  
+使用されているSubset.woff/woff2は、BIZ UDPGothicのサブセット化です。
