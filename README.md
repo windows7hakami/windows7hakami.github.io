@@ -6,7 +6,7 @@
 $${\color{red}ゆっくりしていってね}$$  
 $${\color{yellow}ゆっくりしていってね}$$  
 
-[Microsoft Windows 7](https://ja.wikipedia.org/wiki/Microsoft_Windows_7)　　
+[Microsoft Windows 7(Wikipedia)](https://ja.wikipedia.org/wiki/Microsoft_Windows_7)　　
 
 ![Windows Vista/7](pngwingcom_denoise.png)  
 
