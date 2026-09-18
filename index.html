@@ -65,19 +65,27 @@ BIZ UDPGothic</a></p>
 <p>フリーフォントでかなり綺麗なので<br>
 めっちゃオススメです！(自主宣伝)</p>
 <p>仮機能<p>
+<p>あなたのブラウザは: <strong id="browser-result">判定中...</strong></p>
+
 <script>
 function detectBrowser() {
 const ua = navigator.userAgent.toLowerCase();
 
+if (ua.includes('nintendo wii u')) return 'Wii U';
+if (ua.includes('new nintendo 3ds')) return 'New 3DS';
+if (ua.includes('nintendo 3ds')) return 'Nintendo 3DS';
+
 if (ua.includes('edg/')) return 'Microsoft Edge';
-if (ua.includes('opera/')) return 'Opera';
+if (ua.includes('opera/') || ua.includes('opr/')) return 'Opera';
 if (ua.includes('chrome/')) return 'Google Chrome';
 if (ua.includes('safari/') && !ua.includes('chrome/')) return 'Safari';
 if (ua.includes('firefox/')) return 'Mozilla Firefox';
-if (ua.includes('Nintendo Wii U/')) return 'Wii U';
-if (ua.includes('New Nintendo 3DS/')) return 'New 3DS';
-if (ua.includes('Nintendo 3DS/')) return 'Nintendo 3DS';
- document.getElementById('browser-result').textContent = detectBrowser();
-    </script>
+
+    return 'その他のブラウザ';
+}
+
+document.getElementById('browser-result').textContent = detectBrowser();
+</script>
+
 </body>
 </html>
