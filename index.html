@@ -82,6 +82,8 @@ if(ua.includes&&ua.includes('chrome/'))return 'Google Chrome';
 if(ua.indexOf('chrome/')!==-1)return 'Google Chrome';
 if(ua.indexOf('safari/')!==-1&&ua.indexOf('chrome/')===-1)return 'Safari';
 if(ua.indexOf('firefox/')!==-1)return 'Mozilla Firefox';
+if(ua.indexOf('netfront/')!==-1)return 'NetFront Browser(ベース)';
+if(ua.indexOf('webkit/')!==-1)return 'AppleWebKitベース';
 return '不明';
 }
 document.getElementById('browser-result').textContent=detectBrowser();
