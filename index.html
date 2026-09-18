@@ -65,22 +65,23 @@ BIZ UDPGothic</a></p>
 <p>フリーフォントでかなり綺麗なので<br>
 めっちゃオススメです！(自主宣伝)</p>
 <p>仮機能<p>
-<p>あなたのブラウザは <strong id="browser-result">判定中...</strong></p>
+<p>あなたのブラウザは <b id="browser-result">判定中...</b></p>
 <p style="font-size:0.9em;color:#666;">（UA: <span id="ua-raw">取得中...</span>）</p>
 <script type="text/javascript">
 function detectBrowser(){
-const ua=navigator.userAgent.toLowerCase();
-if(ua.includes('nintendobrowser/5.2.'))return 'Nintendo Switch 2';
-if(ua.includes('nintendobrowser/5.1.'))return 'Nintendo Switch';
-if(ua.includes('nintendo wii u/'))return 'Wii U';
-if(ua.includes('new nintendo 3ds/'))return 'New 3DS';
-if(ua.includes('nintendo 3ds/'))return 'Nintendo 3DS';
-if(ua.includes('msie')||ua.includes('trident/'))return 'Internet Explorer';
-if(ua.includes('edg/'))return 'Microsoft Edge';
-if(ua.includes('opera/'))return 'Opera';
-if(ua.includes('chrome/'))return 'Google Chrome';
-if(ua.includes('safari/')&&!ua.includes('chrome/'))return 'Safari';
-if(ua.includes('firefox/'))return 'Mozilla Firefox';
+var ua=navigator.userAgent.toLowerCase();
+if(ua.indexOf('nintendobrowser/5.2.')!==-1)return 'Nintendo Switch 2';
+if(ua.indexOf('nintendobrowser/5.1.')!==-1)return 'Nintendo Switch';
+if(ua.indexOf('nintendo wii u/')!==-1)return 'Wii U';
+if(ua.indexOf('new nintendo 3ds/')!==-1)return 'New 3DS';
+if(ua.indexOf('nintendo 3ds/')!==-1)return 'Nintendo 3DS';
+if(ua.indexOf('msie')!==-1||ua.indexOf('trident/')!==-1)return 'Internet Explorer';
+if(ua.indexOf('edg/')!==-1)return 'Microsoft Edge';
+if(ua.indexOf('opera/')!==-1)return 'Opera';
+if(ua.includes&&ua.includes('chrome/'))return 'Google Chrome';
+if(ua.indexOf('chrome/')!==-1)return 'Google Chrome';
+if(ua.indexOf('safari/')!==-1&&ua.indexOf('chrome/')===-1)return 'Safari';
+if(ua.indexOf('firefox/')!==-1)return 'Mozilla Firefox';
 return '不明';
 }
 document.getElementById('browser-result').textContent=detectBrowser();
