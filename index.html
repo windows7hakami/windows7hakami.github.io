@@ -97,8 +97,13 @@ if(ua.indexOf('webkit/')!==-1)return 'AppleWebKitベース';
 if(ua.indexOf('mozilla/')!==-1)return 'Netscape Navigator(互換)';
 return '不明';
 }
-document.getElementById('browser-result').textContent=detectBrowser();
-document.getElementById('ua-raw').textContent=navigator.userAgent;
+document.addEventListener('DOMContentLoaded', function() {
+  var resElem = document.getElementById('browser-result');
+  var rawElem = document.getElementById('ua-raw');
+
+  if (resElem) resElem.textContent = detectBrowser();
+  if (rawElem) rawElem.textContent = navigator.userAgent;
+});
 </script>
 <hr>
 <p>Subset of BIZ UDPGothic (Morisawa)</p>
