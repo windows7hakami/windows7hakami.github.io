@@ -89,10 +89,11 @@ if (
 if (ua.indexOf('firefox/') !== -1 || ua.indexOf('fxios/') !== -1) return 'Mozilla Firefox';
 if (ua.indexOf('chrome/') !== -1 || ua.indexOf('crios/') !== -1) return 'Google Chrome';
 if (ua.indexOf('safari/') !== -1) return 'Safari';
-if(ua.indexOf('nf/')!==-1)return 'NetFront Browser NX(ベース)';
-if(ua.indexOf('nx/')!==-1)return 'NetFront Browser NX(ベース)';
-if(ua.indexOf('webkit/')!==-1)return 'AppleWebKitベース';
+if (ua.indexOf('nx/') !== -1 || ua.indexOf('nf/') !== -1) {
+    return 'NetFront Browser NX';
+}
 if(ua.indexOf('netfront/')!==-1)return 'NetFront';
+if(ua.indexOf('webkit/')!==-1)return 'AppleWebKitベース';
 return '不明';
 }
 document.getElementById('browser-result').textContent=detectBrowser();
