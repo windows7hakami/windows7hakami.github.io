@@ -77,7 +77,7 @@ if(ua.indexOf('new nintendo 3ds')!==-1)return 'New 3DS';
 if(ua.indexOf('nintendo 3ds')!==-1)return 'Nintendo 3DS';
 if(ua.indexOf('msie')!==-1||ua.indexOf('trident/')!==-1)return 'Internet Explorer';
 if(ua.indexOf('edg/')!==-1)return 'Microsoft Edge';
-if(ua.indexOf('opera/')!==-1)return 'Opera';
+if (ua.indexOf('opr/') !== -1 || ua.indexOf('opera/') !== -1) return 'Opera';
 if(ua.indexOf('chrome/')!==-1)return 'Google Chrome';
 if(ua.indexOf('safari/')!==-1&&ua.indexOf('chrome/')===-1)return 'Safari';
 if(ua.indexOf('firefox/')!==-1)return 'Mozilla Firefox';
