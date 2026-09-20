@@ -61,7 +61,7 @@ p {
 <hr>
 <p>仮機能</p>
 <p>今見ているブラウザは<b id="browser-result">判定中...</b></p>
-<p style="font-size:0.95em;color:#666;">ユーザーエージェント:<br> <span id="ua-raw">取得中...</span></p>
+<p style="font-size:0.95em;color:#666;">ユーザーエージェント:<br><span id="ua-raw">取得中...</span></p>
 <script type="text/javascript">
 function detectBrowser(){
 var ua=navigator.userAgent.toLowerCase();
@@ -71,41 +71,27 @@ if(ua.indexOf('nintendo wiiu')!==-1)return 'Wii U';
 if(ua.indexOf('new nintendo 3ds')!==-1)return 'New Nintendo 3DS';
 if(ua.indexOf('nintendo 3ds')!==-1)return 'Nintendo 3DS';
 if(ua.indexOf('playstation 4')!==-1)return 'PlayStation 4';
-if (ua.indexOf('nx/') !== -1) return 'NetFront Browser NX';
-if (ua.indexOf('nf/') !== -1) return 'NetFront Browser (NX)';
-if (ua.indexOf('netfront/') !== -1) return 'NetFront Browser';
-if (
-  ua.indexOf('edg/') !== -1 || 
-  ua.indexOf('edgios/') !== -1 || 
-  ua.indexOf('edga/') !== -1 || 
-  ua.indexOf('edge/') !== -1
-) {
-  return 'Microsoft Edge';
-}
-if (
-  ua.indexOf('opr/') !== -1 || 
-  ua.indexOf('opt/') !== -1 || 
-  ua.indexOf('opera/') !== -1
-) {
-  return 'Opera';
-}
-if (ua.indexOf('silk/') !== -1) return 'Amazon Silk';
-if (ua.indexOf('samsungbrowser/') !== -1) return 'Samsungブラウザ';
-if (ua.indexOf('arkweb/') !== -1) return 'HUAWEIブラウザ';
-if (ua.indexOf('huaweibrowser/') !== -1) return 'HUAWEIブラウザ';
+if(ua.indexOf('nx/')!==-1)return 'NetFront Browser NX';
+if(ua.indexOf('nf/')!==-1)return 'NetFront Browser (NX)';
+if(ua.indexOf('netfront/')!==-1)return 'NetFront Browser';
+if(ua.indexOf('edg/')!==-1||ua.indexOf('edgios/')!==-1||ua.indexOf('edga/')!==-1||ua.indexOf('edge/')!==-1)return 'Microsoft Edge';
+if(ua.indexOf('opr/')!==-1||ua.indexOf('opt/')!==-1||ua.indexOf('opera/')!==-1)return 'Opera';
+if(ua.indexOf('silk/')!==-1)return 'Amazon Silk';
+if(ua.indexOf('samsungbrowser/')!==-1)return 'Samsungブラウザ';
+if(ua.indexOf('arkweb/')!==-1)return 'HUAWEIブラウザ';
+if(ua.indexOf('huaweibrowser/')!==-1)return 'HUAWEIブラウザ';
 if(ua.indexOf('msie')!==-1||ua.indexOf('trident/')!==-1)return 'Internet Explorer';
-if (ua.indexOf('firefox/') !== -1 || ua.indexOf('fxios/') !== -1) return 'Mozilla Firefox';
-if (ua.indexOf('chromium/') !== -1) return 'Chromium(系)';
-if (ua.indexOf('chrome/') !== -1 || ua.indexOf('crios/') !== -1) return 'Google Chrome';
-if (ua.indexOf('safari/') !== -1) return 'Safari';
+if(ua.indexOf('firefox/')!==-1||ua.indexOf('fxios/')!==-1)return 'Mozilla Firefox';
+if(ua.indexOf('chromium/')!==-1)return 'Chromium(系)';
+if(ua.indexOf('chrome/')!==-1||ua.indexOf('crios/')!==-1)return 'Google Chrome';
+if(ua.indexOf('safari/')!==-1)return 'Safari';
 if(ua.indexOf('webkit/')!==-1)return 'AppleWebKitベース';
 return '不明';
 }
-var resElem = document.getElementById('browser-result');
-var rawElem = document.getElementById('ua-raw');
-if (resElem) resElem.innerHTML = detectBrowser();
-if (rawElem) rawElem.innerHTML = navigator.userAgent;
-})();
+var resElem=document.getElementById('browser-result');
+var rawElem=document.getElementById('ua-raw');
+if(resElem)resElem.innerHTML=detectBrowser();
+if(rawElem)rawElem.innerHTML=navigator.userAgent;
 </script>
 <hr>
 <p>Subset of BIZ UDPGothic (Morisawa)</p>
