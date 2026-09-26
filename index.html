@@ -87,10 +87,17 @@ if(ua.indexOf('safari/')!==-1)return 'Safari';
 if(ua.indexOf('webkit/')!==-1)return 'AppleWebKitベース';
 return '不明';
 }
+function safeSetText(element, text) {
+    if (!element) return;
+    while (element.firstChild) {
+        element.removeChild(element.firstChild);
+    }
+element.appendChild(document.createTextNode(text));
+}
 var resElem=document.getElementById('browser-result');
 var rawElem=document.getElementById('ua-raw');
-if(resElem)resElem.innerHTML=detectBrowser();
-if(rawElem)rawElem.innerHTML=navigator.userAgent;
+safeSetText(resElem, detectBrowser());
+safeSetText(rawElem, navigator.userAgent);
 </script>
 <hr>
 <p>Subset of BIZ UDPGothic (Morisawa)</p>
