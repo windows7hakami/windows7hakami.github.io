@@ -1,16 +1,16 @@
 @charset "utf-8";
-@font-face {
-font-family: "Subset";
-src: url("Subset.woff2") format("woff2"),
-url("Subset.woff") format("woff");
-font-display: swap;
-}
-
 .responsive-img {
 display: block;
 max-width: 600px !important;
 width: auto;
 height: auto;
+}
+
+@font-face {
+font-family: "Subset";
+src: url("Subset.woff2") format("woff2"),
+url("Subset.woff") format("woff");
+font-display: swap;
 }
 
 body {
