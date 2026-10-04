@@ -9,7 +9,7 @@ font-display: swap;
 .responsive-img {
 display: block;
 max-width: 600px !important;
-width: 100%;
+width: auto;
 height: auto;
 }
 
