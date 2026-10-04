@@ -6,19 +6,19 @@ url("Subset.woff") format("woff");
 font-display: swap;
 }
 
+.responsive-img {
+display: block;
+width: 100%;
+max-width: 600px;
+height: auto;
+}
+
 body {
 font-family: "Meiryo", "メイリオ", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴシック", "Subset", "BIZ UDPゴシック", "BIZ UDPGothic", "Noto Sans JP", sans-serif;
 font-style: normal;
 font-weight: 400;
 line-height: 1.5;
 background-image:url("Windows7_usuaji.png");
-}
-
-.responsive-img {
-display: block;
-width: 100%;
-max-width: 600px !important;
-height: auto !important;
 }
 
 p {
