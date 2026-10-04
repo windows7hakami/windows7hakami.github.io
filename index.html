@@ -4,48 +4,17 @@
 <meta charset="utf-8">
 <title>Windows7のウェブサイト</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
- <style type="text/css">
-@font-face {
-    font-family: "Subset";
-    src: url("Subset.woff2") format("woff2"),
-           url("Subset.woff") format("woff");
-    font-display: swap;
-}
-
-body {
-font-family: "Meiryo", "メイリオ", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴシック", "Subset", "BIZ UDPゴシック", "BIZ UDPGothic", "Noto Sans JP", sans-serif;
-font-style: normal;
-font-weight: 400;
-line-height: 1.5;
-background-image:url("Windows7_usuaji.png");
-}
-
-p {
-    margin-top: 0;
-    margin-bottom: 0.25em;
-}
-
- h1{
- border: 2px solid #000000;
- color:#1100ff;
- }
- .responsive-img {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
- }
-</style>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<a href="index.html">Windows7のウェブサイト</a>
-&nbsp;&nbsp;
-<a href="お知らせ.html">お知らせ</a>
-&nbsp;&nbsp;
-<a href="SNS.html">SNS</a>
-&nbsp;&nbsp;
-<a href="持っている物.html">持っているガジェット</a>
+<div class="navigation">
+<a href="index.html" class="nav-link">Windows7のウェブサイト</a>
+<a href="お知らせ.html" class="nav-link">お知らせ</a>
+<a href="SNS.html" class="nav-link">SNS</a>
+<a href="持っている物.html" class="nav-link">持っているガジェット</a>
+</div>
 <h1>Windows7のウェブサイト</h1>
-<img src="pngwingcom_denoise.png" alt="Windows7のアイコン">
+<img src="pngwingcom_denoise.png" alt="Windows7のアイコン" width="320" height="320">
 <p>今回初めてHTMLでサイトを作ってみました。</p>
 <p>阿部寛のホームページ程度には速いと思います<br>
 (AndroidなどはBIZ UDPGothicを読み込ませているので、<br>
@@ -55,7 +24,7 @@ p {
 <p>よろしくお願いします</p>
 <p>Hello world！</p>
 <audio controls>
-  <source src="You-are-an-idiot.m4a" type="audio/mp4">
+<source src="You-are-an-idiot.m4a" type="audio/mp4">
 オーディオタグが表示できません。詳しくはお知らせを参照してください
 </audio>
 <img src="Windows7のサイト.png" alt="Windows7のサイト" class="responsive-img" width="1500" height="500">
@@ -90,10 +59,10 @@ if(ua.indexOf('webkit/')!==-1)return 'AppleWebKitベース';
 return '不明';
 }
 function safeSetText(element, text) {
-    if (!element) return;
-    while (element.firstChild) {
-        element.removeChild(element.firstChild);
-    }
+if (!element) return;
+while (element.firstChild) {
+element.removeChild(element.firstChild);
+}
 element.appendChild(document.createTextNode(text));
 }
 var resElem=document.getElementById('browser-result');

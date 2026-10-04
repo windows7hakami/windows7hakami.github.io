@@ -1,0 +1,35 @@
+@font-face {
+font-family: "Subset";
+src: url("Subset.woff2") format("woff2"),
+url("Subset.woff") format("woff");
+font-display: swap;
+}
+
+body {
+font-family: "Meiryo", "メイリオ", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴシック", "Subset", "BIZ UDPゴシック", "BIZ UDPGothic", "Noto Sans JP", sans-serif;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5;
+background-image:url("Windows7_usuaji.png");
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+}
+
+h1{
+border: 2px solid #000000;
+color:#1100ff;
+ }
+
+.nav-link {
+    margin-right: 12px;
+}
+
+.responsive-img {
+width: 100%;
+max-width: 1500px;
+height: auto;
+aspect-ratio: 1500 / 500;
+}
