@@ -1,9 +1,9 @@
 @charset "utf-8";
-img.responsive-img {
-display: block !important;
-max-width: 600px !important;
-width: 100% !important;
-height: auto !important;
+img[class*="responsive-img"] {
+  display: block !important;
+  max-width: 600px !important;
+  width: 100% !important;
+  height: auto !important;
 }
 
 @font-face {
