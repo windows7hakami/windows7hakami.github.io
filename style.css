@@ -14,6 +14,13 @@ line-height: 1.5;
 background-image:url("Windows7_usuaji.png");
 }
 
+.responsive-img {
+display: block;
+width: 100%;
+max-width: 600px; !important
+height: auto; !important
+}
+
 p {
     margin-top: 0;
     margin-bottom: 0.25em;
@@ -22,15 +29,8 @@ p {
 h1{
 border: 2px solid #000000;
 color:#1100ff;
- }
+}
 
 .nav-link {
     margin-right: 12px;
-}
-
-.responsive-img {
-display: block;
-width: 100%;
-max-width: 600px;
-height: auto; !important
 }
