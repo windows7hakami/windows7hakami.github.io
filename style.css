@@ -7,8 +7,7 @@ font-display: swap;
 }
 
 body {
-font-family: "Meiryo", "メイリオ", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴシック", "MS PGothic",
-"Subset", "BIZ UDPGothic", "BIZ UDPゴシック", "Noto Sans JP", sans-serif;
+font-family: "Meiryo", "メイリオ", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴシック", "MS PGothic", "ＭＳ Ｐゴシック", "Subset", "BIZ UDPGothic", "BIZ UDPゴシック", "Noto Sans JP", sans-serif;
 font-style: normal;
 font-weight: 400;
 line-height: 1.5;
