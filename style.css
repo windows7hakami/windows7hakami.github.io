@@ -14,15 +14,16 @@ line-height: 1.5;
 background-image:url("Windows7_usuaji.png");
 }
 
+h1{
+border: 2px solid #000000;
+color:#1100ff;
+}
+
 p {
     margin-top: 0;
     margin-bottom: 0.25em;
 }
 
-h1{
-border: 2px solid #000000;
-color:#1100ff;
-}
 
 .nav-link {
     margin-right: 12px;
