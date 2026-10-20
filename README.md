@@ -1,5 +1,5 @@
-## Hello world!
-### こんにちは世界！
+# Hello world!
+## こんにちは世界！
 どうもこんにちは、Windows 7です。  
 このサイトは**不定期**で更新していきます  
 
@@ -10,7 +10,7 @@ $${\color{yellow}ゆっくりしていってね}$$
 
 ![Windows Vista/7](pngwingcom_denoise.png)  
 
-[ライセンス](OFL.txt)  
+## [ライセンス](OFL.txt)  
 Copyright 2022 The BIZ UDGothic Project Authors (https://github.com/googlefonts/morisawa-biz-ud-gothic)  
 Copyright 2026 windows7hakami   
 [BIZ UDPGothic(Google Fonts)](https://fonts.google.com/specimen/BIZ+UDPGothic)  
