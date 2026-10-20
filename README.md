@@ -8,7 +8,7 @@ $${\color{yellow}ゆっくりしていってね}$$
 
 [Microsoft Windows 7(Wikipedia)](https://ja.wikipedia.org/wiki/Microsoft_Windows_7)　　
 
-![Windows Vista/7](pngwingcom_denoise.png)  
+![Windows Vista/7](Win7_icon.png)  
 
 ## [ライセンス](OFL.txt)  
 Copyright 2022 The BIZ UDGothic Project Authors (https://github.com/googlefonts/morisawa-biz-ud-mincho)  
