@@ -11,6 +11,7 @@ $${\color{yellow}ゆっくりしていってね}$$
 ![Windows Vista/7](pngwingcom_denoise.png)  
 
 > [!NOTE]
+> LICENSE
 Copyright 2022 The BIZ UDGothic Project Authors (https://github.com/googlefonts/morisawa-biz-ud-gothic)  
 Copyright 2026 windows7hakami   
 [BIZ UDPGothic(Google Fonts)](https://fonts.google.com/specimen/BIZ+UDPGothic)  
