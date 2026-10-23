@@ -17,7 +17,7 @@ background-image:url("Windows7_usuaji.png");
 h1{
 border: 2px solid #000000;
 color:#1100ff;
-padding: 0.1em 0.1em
+padding: 0em 0.2 em
 }
 
 p {
@@ -25,11 +25,11 @@ margin-top: 0;
 margin-bottom:0.25em;
 }
 
-.note { color: #666; }
-
 .nav-link {
 margin-right: 12px;
 }
+
+.note { color: #666; }
 
 .responsive-img {
 max-width: 600px;
