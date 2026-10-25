@@ -61,6 +61,7 @@ if(ua.indexOf('aozora')!==-1)return 'Aozora Browser (Mini)';
 if(ua.indexOf('chrome/')!==-1||ua.indexOf('crios/')!==-1)return 'Google Chrome';
 if(ua.indexOf('safari/')!==-1)return 'Safari';
 if(ua.indexOf('webkit/')!==-1)return 'AppleWebKitベース';
+if(ua.indexOf('netsurf/')!==-1)return 'NetSurf';
 return '不明';
 }
 function safeSetText(element, text) {
