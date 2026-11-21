@@ -1,2 +1,15 @@
-# windows7hakami.github.io
-Windows7のウェブサイトです
+# Hello, world!
+## こんにちは、世界！
+どうもこんにちは、Windows 7です。  
+このサイトは**不定期**で更新していきます  
+
+$${\color{red}ゆっくりしていってね}$$  
+$${\color{yellow}ゆっくりしていってね}$$  
+
+[Microsoft Windows 7(Wikipedia)](https://ja.wikipedia.org/wiki/Microsoft_Windows_7)　　
+
+![Windows Vista/7](Win7_icon.png)  
+
+## [ライセンス](OFL.txt)  
+Copyright 2022 The BIZ UDGothic Project Authors (https://github.com/googlefonts/morisawa-biz-ud-mincho)  
+Copyright 2026 windows7hakami   

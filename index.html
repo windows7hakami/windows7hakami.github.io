@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Windows7のウェブサイト</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Windows7のウェブサイト">
+<link rel="icon" href="favicon.ico">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="navigation">
+<a href="index.html" class="nav-link">Windows7のウェブサイト</a>
+<a href="News.html" class="nav-link">お知らせ</a>
+<a href="SNS.html" class="nav-link">SNS等</a>
+<a href="Moe_Counter.html" class="nav-link">アクセスカウンター</a>
+</div>
+<h1>Windows7のウェブサイト</h1>
+<img src="Win7_icon.png" width="256" height="256" alt="Windows7のアイコン">
+<p>今回初めてHTMLでサイトを作ってみました。</p>
+<p>阿部寛のホームページ程度には速いと思います。</p>
+<p class="note">
+(AndroidなどはBIZ UDPGothicを読み込ませているので、
+初回時だとGoogle検索より遅いかもしれません。)</p>
+<p>このサイトは不定期に更新していきます。</p>
+<p>試験的にサイトのコードを変えることがあります。</p>
+<p>よろしくお願いします！</p>
+<p>Hello, world!</p>
+<p class="note">
+こんにちは、世界！</p>
+<audio controls preload="none">
+<source src="You-are-an-idiot.m4a" type="audio/mp4">
+<source src="You-are-an-idiot.ogg" type="audio/ogg">
+<p>オーディオタグを表示できません。<br>
+ご使用中のブラウザーが古いか、HTML5に非対応です。<br>
+できれば更新してからご使用してください。</p>
+<p class="note">
+(推奨ブラウザー⋯<br>
+HTML5にそこそこ対応しているブラウザー,<br>
+2017~2020年のブラウザー,<br>
+TLS 1.3に対応したブラウザー)</p>
+</audio>
+<img src="Site_bar.jpg" width="1500" height="500" alt="Windows7のサイト" class="responsive-img">
+<hr>
+<p>使用中のブラウザーは<b id="browser-result">判定中...</b></p>
+<p class="note">ユーザーエージェント:<br><span id="ua-raw">取得中...</span></p>
+<script type="text/javascript">
+function detectBrowser(){
+var ua=navigator.userAgent.toLowerCase();
+if(ua.indexOf('nintendobrowser/5.2.')!==-1)return 'NetFront Browser NX（Nintendo Switch 2）';
+if(ua.indexOf('nintendo switch')!==-1)return 'NetFront Browser NX（Nintendo Switch）';
+if(ua.indexOf('nintendo wiiu')!==-1)return 'インターネットブラウザー（Nintendo Wii U）';
+if(ua.indexOf('new nintendo 3ds')!==-1)return 'インターネットブラウザー（New Nintendo 3DS）';
+if(ua.indexOf('nintendo 3ds')!==-1)return 'インターネットブラウザー（Nintendo 3DS）';
+if(ua.indexOf('playstation 4')!==-1)return 'インターネットブラウザー（PlayStation 4）';
+if(ua.indexOf('nx/')!==-1)return 'NetFront Browser NX';
+if(ua.indexOf('nf/')!==-1)return 'NetFront Browser (NX)';
+if(ua.indexOf('netfront/')!==-1)return 'NetFront Browser';
+if(ua.indexOf('edg/')!==-1||ua.indexOf('edgios/')!==-1||ua.indexOf('edga/')!==-1||ua.indexOf('edge/')!==-1)return 'Microsoft Edge';
+if (ua.indexOf('opr/') !== -1 || ua.indexOf('opt/') !== -1 ||ua.indexOf('opios/') !== -1 || ua.indexOf('opera/') !== -1) return 'Opera';
+if(ua.indexOf('silk/')!==-1)return 'Amazon Silk';
+if(ua.indexOf('samsungbrowser/')!==-1)return 'Samsungブラウザ';
+if(ua.indexOf('arkweb/')!==-1)return 'HUAWEIブラウザ';
+if(ua.indexOf('huaweibrowser/')!==-1)return 'HUAWEIブラウザ';
+if(ua.indexOf('msie')!==-1||ua.indexOf('trident/')!==-1)return 'Internet Explorer';
+if(ua.indexOf('airsky')!==-1)return 'AirSky Browser';
+if(ua.indexOf('firefox/')!==-1||ua.indexOf('fxios/')!==-1)return 'Mozilla Firefox';
+if(ua.indexOf('aozora')!==-1)return 'Aozora Browser (Mini)';
+if(ua.indexOf('wv')!==-1)return 'WebView（ベース）';
+if(ua.indexOf('chrome/')!==-1||ua.indexOf('crios/')!==-1)return 'Google Chrome';
+if(ua.indexOf('safari/')!==-1)return 'Safari';
+if(ua.indexOf('webkit/')!==-1)return 'AppleWebKitベース';
+if(ua.indexOf('netsurf/')!==-1)return 'NetSurf';
+return '不明';
+}
+function safeSetText(element, text) {
+if (!element) return;
+while (element.firstChild) {
+element.removeChild(element.firstChild);
+}
+element.appendChild(document.createTextNode(text));
+}
+var resElem=document.getElementById('browser-result');
+var rawElem=document.getElementById('ua-raw');
+safeSetText(resElem, detectBrowser());
+safeSetText(rawElem, navigator.userAgent);
+</script>
+<noscript>
+<p>JavaScriptが無効になっています。<br>
+できればJavaScriptを有効にしてからご使用してください。</p>
+</noscript>
+<hr>
+<p>Copyright 2022 The BIZ UDGothic Project Authors</p>
+<a href="https://github.com/googlefonts/morisawa-biz-ud-gothic">
+BIZ UDゴシック(GitHub)</a>
+<p>Copyright 2026 windows7hakami</p>
+<a href="https://fonts.google.com/specimen/BIZ+UDPGothic">
+BIZ UDPGothic(Google Fonts)</a>
+<p>フリーフォントでかなり綺麗なので、かなりオススメです！</p>
+<a href="OFL.txt">
+SIL Open Font License(OFL)</a>
+</body>
+</html>
