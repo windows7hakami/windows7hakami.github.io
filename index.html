@@ -48,30 +48,30 @@ TLS 1.3に対応したブラウザー)</p>
 <script type="text/javascript">
 function detectBrowser(){
 var ua=navigator.userAgent.toLowerCase();
-if(ua.indexOf('nintendobrowser/5.2.')!==-1)return 'NetFront Browser NX（Nintendo Switch 2）';
-if(ua.indexOf('nintendo switch')!==-1)return 'NetFront Browser NX（Nintendo Switch）';
-if(ua.indexOf('nintendo wiiu')!==-1)return 'インターネットブラウザー（Nintendo Wii U）';
-if(ua.indexOf('new nintendo 3ds')!==-1)return 'インターネットブラウザー（New Nintendo 3DS）';
-if(ua.indexOf('nintendo 3ds')!==-1)return 'インターネットブラウザー（Nintendo 3DS）';
-if(ua.indexOf('playstation 4')!==-1)return 'インターネットブラウザー（PlayStation 4）';
-if(ua.indexOf('nx/')!==-1)return 'NetFront Browser NX';
-if(ua.indexOf('nf/')!==-1)return 'NetFront Browser (NX)';
-if(ua.indexOf('netfront/')!==-1)return 'NetFront Browser';
-if(ua.indexOf('edg/')!==-1||ua.indexOf('edgios/')!==-1||ua.indexOf('edga/')!==-1||ua.indexOf('edge/')!==-1)return 'Microsoft Edge';
-if (ua.indexOf('opr/') !== -1 || ua.indexOf('opt/') !== -1 ||ua.indexOf('opios/') !== -1 || ua.indexOf('opera/') !== -1) return 'Opera';
-if(ua.indexOf('silk/')!==-1)return 'Amazon Silk';
-if(ua.indexOf('samsungbrowser/')!==-1)return 'Samsungブラウザ';
-if(ua.indexOf('arkweb/')!==-1)return 'HUAWEIブラウザ';
-if(ua.indexOf('huaweibrowser/')!==-1)return 'HUAWEIブラウザ';
-if(ua.indexOf('msie')!==-1||ua.indexOf('trident/')!==-1)return 'Internet Explorer';
-if(ua.indexOf('airsky')!==-1)return 'AirSky Browser';
-if(ua.indexOf('firefox/')!==-1||ua.indexOf('fxios/')!==-1)return 'Mozilla Firefox';
-if(ua.indexOf('aozora')!==-1)return 'Aozora Browser (Mini)';
-if(ua.indexOf('wv')!==-1)return 'WebView（ベース）';
-if(ua.indexOf('chrome/')!==-1||ua.indexOf('crios/')!==-1)return 'Google Chrome';
-if(ua.indexOf('safari/')!==-1)return 'Safari';
-if(ua.indexOf('webkit/')!==-1)return 'AppleWebKitベース';
-if(ua.indexOf('netsurf/')!==-1)return 'NetSurf';
+if(ua.indexOf('nintendobrowser/5.2.')>= 0)return 'NetFront Browser NX（Nintendo Switch 2）';
+if(ua.indexOf('nintendo switch')>= 0)return 'NetFront Browser NX（Nintendo Switch）';
+if(ua.indexOf('nintendo wiiu')>= 0)return 'インターネットブラウザー（Nintendo Wii U）';
+if(ua.indexOf('new nintendo 3ds')>= 0)return 'インターネットブラウザー（New Nintendo 3DS）';
+if(ua.indexOf('nintendo 3ds')>= 0)return 'インターネットブラウザー（Nintendo 3DS）';
+if(ua.indexOf('playstation 4')>= 0)return 'インターネットブラウザー（PlayStation 4）';
+if(ua.indexOf('nx/')>= 0)return 'NetFront Browser NX';
+if(ua.indexOf('nf/')>= 0)return 'NetFront Browser (NX)';
+if(ua.indexOf('netfront/')>= 0)return 'NetFront Browser';
+if(ua.indexOf('edg/')>= 0||ua.indexOf('edgios/')>= 0||ua.indexOf('edga/')>= 0||ua.indexOf('edge/')>= 0)return 'Microsoft Edge';
+if (ua.indexOf('opr/') >= 0 || ua.indexOf('opt/') >= 0 ||ua.indexOf('opios/') >= 0 || ua.indexOf('opera/') >= 0) return 'Opera';
+if(ua.indexOf('silk/')>= 0)return 'Amazon Silk';
+if(ua.indexOf('samsungbrowser/')>= 0)return 'Samsungブラウザ';
+if(ua.indexOf('arkweb/')>= 0)return 'HUAWEIブラウザ';
+if(ua.indexOf('huaweibrowser/')>= 0)return 'HUAWEIブラウザ';
+if(ua.indexOf('msie')>= 0||ua.indexOf('trident/')>= 0)return 'Internet Explorer';
+if(ua.indexOf('airsky')>= 0)return 'AirSky Browser';
+if(ua.indexOf('firefox/')>= 0||ua.indexOf('fxios/')>= 0)return 'Mozilla Firefox';
+if(ua.indexOf('aozora')>= 0)return 'Aozora Browser (Mini)';
+if(ua.indexOf('wv')>= 0)return 'WebView（ベース）';
+if(ua.indexOf('chrome/')>= 0||ua.indexOf('crios/')>= 0)return 'Google Chrome';
+if(ua.indexOf('safari/')>= 0)return 'Safari';
+if(ua.indexOf('webkit/')>= 0)return 'AppleWebKitベース';
+if(ua.indexOf('netsurf/')>= 0)return 'NetSurf';
 return '不明';
 }
 function safeSetText(element, text) {
